@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS customers;
+CREATE TABLE IF NOT EXISTS customers (
+  -- Auto incrementing primary key
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
