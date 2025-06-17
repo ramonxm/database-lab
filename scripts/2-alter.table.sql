@@ -2,3 +2,14 @@
 
 ALTER TABLE customers 
 ADD COLUMN email VARCHAR(255) NOT NULL UNIQUE;
+
+ALTER TABLE customers
+ALTER COLUMN first_name SET DATA TYPE VARCHAR(60);
+
+ALTER TABLE customers
+ADD COLUMN age INT;
+
+-- ALTER TABLE customers RENAME COLUMN age TO birth_date;
+
+ALTER TABLE customers
+ALTER COLUMN age SET DEFAULT 0;
