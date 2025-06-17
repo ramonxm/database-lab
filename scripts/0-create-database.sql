@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS database_lab;
+CREATE DATABASE database_lab;
